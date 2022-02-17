@@ -279,7 +279,7 @@ function submit (){
   }).then(res=>res.json())
   .then((data)=>{
     console.log(data)
-    window.location.replace(`/front/html/confirmation.html?orderId=${data.orderId}`)
+    window.location.href =`./confirmation.html?orderId=${data.orderId}`
   })
   console.log(productList)
   console.log(orderContact)
